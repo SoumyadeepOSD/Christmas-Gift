@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#cake{
+    color: cyan;
+}
+.container .items {
+    background: linear-gradient(90deg, blue, violet);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .nav-bar___link,
+ul,
+li {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  list-style-type: none;
+  transform-origin: 0 1;
+  transition: transform 0.25s, visibility 0.25s ease-in;
+}
+.item:hover {
+    background: linear-gradient(90deg, orange, red);
+    border-radius: 20px;
+    padding-inline: 20px;
+    color: white;
+    font-size: 30px;
+    transform: scale(2);
+  }
+
+#bg-image{
+    width: 98vw;
+}

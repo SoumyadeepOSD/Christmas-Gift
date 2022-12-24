@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>FORM</title>
+</head>
+<body>
+<form id="form" method="GET" action="display.html">
+NAME: <input type="text" name="name" id="name">
+<input type="button" value="Submit" onclick="submitForm()">
+</form>
+<script>
+function submitForm(){
+    if(typeof(localStorage) != "undefined"){
+        localStorage.name = document.getElementById("name").value;
+    }
+    document.getElementById("form").submit();
+}
+</script>
+</body>
+</html>

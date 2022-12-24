@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soumyadeep-Gift</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const greetingValue = urlParams.get('greeting');
+      console.log(greetingValue);  
+    </script>
+    <!-- <link rel="stylesheet" href="home.css" /> -->
+    <style>
+      #O {
+        background: black;
+        color: white;
+      }
+      #show{
+        font-size: 50px;
+        color: white;
+        font-weight: 600;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+    </style>
+  </head>
+  <body onload="setData()">
+    <header>
+      <div class="container">
+        <ul class="items">
+          <li class="item">
+            <a class="nav-bar___link" href="cake.html">Cake</a>
+          </li>
+          <li class="item"><a class="nav-bar___link" href="#">Gifts</a></li>
+          <li class="item"><a class="nav-bar___link" href="#">Wishes</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <marquee class="guide">
+        <div id="marq">Wish you a merry christmas❄️🎊🎁</div>
+      </marquee>
+
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <marquee id="santa">
+        <lottie-player
+          src="https://assets8.lottiefiles.com/packages/lf20_o4zzehdv.json"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px"
+          loop
+          autoplay
+        >
+        </lottie-player>
+          <p id="show">
+          </p>
+          <script>
+            function setData(){
+                if(typeof(localStorage) != "undefined"){
+                    document.getElementById("show").innerHTML = localStorage.name;
+                }
+            }
+            </script>
+      </marquee>
+    </main>
+
+    <section class="footer">
+      <div class="content">
+        <div class="card1">
+          Santa has something special for you!<br />
+          Get your amazing gifts now
+        </div>
+
+        <div>
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player
+            src="https://assets10.lottiefiles.com/packages/lf20_utg5aynd.json"
+            mode="bounce"
+            background="transparent"
+            speed="2"
+            style="width: 300px; height: 300px"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+
+        <div class="card2">
+          Stay Always happy and <br />be a best version of yourself💎
+        </div>
+
+        <div>
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player
+            src="https://assets10.lottiefiles.com/private_files/lf30_qqgxq6z4.json"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+
+        <div class="card3">
+          Forget your past,<br />move forward to better life👋
+        </div>
+
+        <div>
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player
+            src="https://assets10.lottiefiles.com/packages/lf20_hjbioo71.json"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+
+        <div class="card4">
+          Atlast,<br />Show support to the creator of this project👇
+        </div>
+      </div>
+    </section>
+
+    <!-- <footer> -->
+    <!-- <div class="content">
+        <div class="card1">
+          Santa has something special for you!<br />
+          Get your amazing gifts now
+        </div>
+
+        <div>
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player
+            src="https://assets10.lottiefiles.com/packages/lf20_utg5aynd.json"
+            mode="bounce"
+            background="transparent"
+            speed="2"
+            style="width: 300px; height: 300px"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+
+        <div class="card2">
+          Stay Always happy and <br/>be a best version of yourself💎
+        </div>
+
+        <div>
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player
+            src="https://assets10.lottiefiles.com/private_files/lf30_qqgxq6z4.json"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+
+        <div class="card3">
+          Forget your past,<br/>move forward to better life👋 
+        </div>
+
+        <div>
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_hjbioo71.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+        </div>
+
+        <div class="card4">
+          Atlast,<br/>Show support to the creator of this project👇
+        </div>
+      </div>
+      
+
+      <div>
+        <ul class="connect">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-github" aria-hidden="true"></i>
+          <i class="fa fa-coffee" aria-hidden="true"></i>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </ul>
+      </div>
+
+      <div class="name guide">Made with ❤️ by Soumyadeep 😉</div> -->
+    <!-- </footer> -->
+    <footer>
+      <div>
+        <div class="name">Made with ❤️ by Soumyadeep 😉</div>
+        <ul class="connect">
+          <a href="https://github.com/risav-sarkar?tab=overview&from=2021-12-01&to=2021-12-31">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/SoumyadeepOSD">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com/SoumyadeepDasB6">
+            <i class="fa fa-coffee" aria-hidden="true"></i>
+          </a>
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

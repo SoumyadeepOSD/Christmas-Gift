@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Display</title>
+</head>
+<body >
+    <div onload="setData()">
+<p id="show">
+Name: <!-- want to display the name here -->
+</p>
+<script>
+function setData(){
+    if(typeof(localStorage) != "undefined"){
+        document.getElementById("show").innerHTML = localStorage.name;
+    }
+}
+</script>
+</div>
+</body>
+</html>
