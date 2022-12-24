@@ -1,42 +1,33 @@
 *{
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
-#cake{
-    color: cyan;
+body{
+  background: linear-gradient(90deg, orange, yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.container .items {
-    background: linear-gradient(90deg, blue, violet);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .nav-bar___link,
-ul,
-li {
-  text-decoration: none;
-  color: white;
+.text{
   font-size: 30px;
-  font-weight: bold;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  list-style-type: none;
-  transform-origin: 0 1;
-  transition: transform 0.25s, visibility 0.25s ease-in;
+  color:rgb(4, 4, 65);
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.item:hover {
-    background: linear-gradient(90deg, orange, red);
-    border-radius: 20px;
-    padding-inline: 20px;
-    color: white;
-    font-size: 30px;
-    transform: scale(2);
-  }
-
-#bg-image{
-    width: 98vw;
+#btn{
+  background: linear-gradient(90deg, red, blue);
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-inline: 20vw;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+a{
+  text-decoration: none;
 }
